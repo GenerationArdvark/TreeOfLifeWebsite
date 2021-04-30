@@ -1,28 +1,27 @@
-
 .navbar .navbar-brand img {
-  height: 50px;
+	height: 50px;
 }
 
 #landingJumbotron {
-	background-image: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.85) 100%), url(assets/background_two.jpg);
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.85) 100%), url(assets/background_two.jpg);
 	background-repeat: no-repeat;
 	background-size: 100% auto;
-	background-position: center center; 
+	background-position: center center;
 }
 
 #section1 {
-	height: 400px; 
+	height: 400px;
 }
 
 .carousel-item {
-  width:640px;
-  height:360px;
+	width: 640px;
+	height: 360px;
 }
 
 #section3 {
-	height: 400px; 
+	height: 400px;
 }
 
 #section4 {
-	height: 400px; 
+	height: 400px;
 }
