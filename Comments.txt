@@ -1,0 +1,32 @@
+Here are my thoughts as of May 18, 2021
+
+
+I took the time to touch up all of the photos that were in the repository using affinity photo so they should look a bit better.  I also renamed them.
+
+Some site modifications like setting up the slideshow can probably be easily implemented.  I will see if I can find the page wher eit has a slideshow on the boot strap site:
+
+https://getbootstrap.com/
+
+
+I can think of some other minor styling changes like gradients on the header and footer / navbar and perhaps a background that is not super bright...
+
+
+I like the donation paypal button upfront on the main page.
+
+
+for the paypal:
+
+for non-profits:
+1. https://www.paypal.com/us/smarthelp/topic/NONPROFITS_AND_DONATIONS
+
+2. https://www.paypal.com/us/smarthelp/article/how-do-i-apply-for-the-discounted-charity-rate-faq4104
+
+
+Donate Button:
+https://www.paypal.com/us/smarthelp/article/how-do-i-create-a-donate-button-with-a-text-field-ts1513
+
+
+QR code:
+https://www.paypal.com/us/smarthelp/article/how-do-i-set-up-my-paypal-qr-code-faq4252
+
+
