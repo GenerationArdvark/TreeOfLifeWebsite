@@ -35,7 +35,7 @@
 					<div>Tree Of Life Orphanage</div>
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav">
-							<li class="nav-item">
+							<li class="nav-item" !important>
 								<a class="nav-link active" href="#">Home</a>
 							</li>
 							<li class="nav-item">
@@ -426,7 +426,6 @@
 						</div>
 					</div>
 				</section>
-
 				<section id="contribute">
 					<div class="jumbotron jumbotron-fluid">
 						<div class="container justify-content-center"
@@ -494,21 +493,51 @@
 											towards above items are also welcome.To donate on line through
 											our secure donation page at PayPal click the donate button below.
 										</p>
+										<div id="smart-button-container">
+											<div style="text-align: center;">
+												<div id="paypal-button-container"></div>
+											</div>
+										</div>
+										<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"
+											data-sdk-integration-source="button-factory"></script>
+										<script>
+											function initPayPalButton() {
+												paypal.Buttons({
+													style: {
+														shape: 'rect',
+														color: 'gold',
+														layout: 'vertical',
+														label: 'paypal',
 
-										<form action="https://www.paypal.com/donate?token=-RDEwiVX2slCSNI0gUTmaXKICXSMCeeiJ1w0R2iHL5KYfYcgwY8NZ1Cx3WrGuPpAuCwDYLiOuDeMCFYY"
-											method="post">
-											<div align="center"></div>
-											<div align="center"></div>
-											<div align="center"><input
-													alt="PayPal - The safer, easier way to pay online!"
-													name="submit"
-													src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
-													type="image"><br>
-												<img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
-													alt="" width="1" height="1" border="0"></div>
-										</form>
+													},
+
+													createOrder: function (data, actions) {
+														return actions.order.create({
+															purchase_units: [{
+																"amount": {
+																	"currency_code": "USD",
+																	"value": 1
+																}
+															}]
+														});
+													},
+
+													onApprove: function (data, actions) {
+														return actions.order.capture().then(function (details) {
+															alert('Transaction completed by ' + details.payer.name
+																.given_name + '!');
+														});
+													},
+
+													onError: function (err) {
+														console.log(err);
+													}
+												}).render('#paypal-button-container');
+											}
+											initPayPalButton();
+
+										</script>
 							</div>
-
 							<p>
 								You can specify what how you would like your donation to be used in the memo of
 								the check (ex: “Food”), or it will go into our general fund and be used where it
