@@ -9,6 +9,7 @@
 
 html {
 	font-family: 'Montserrat', sans-serif;
+	background-color: aliceblue;
 }
 
 em {
@@ -122,5 +123,12 @@ footer {
 	width: auto;
 }
 
+
+gallery {
+	text-align: center;
+	align-items: stretch;
+	align-self: start;
+
+}
 
 /* #5F686C  -- background color as it appears now, for donation/contributions section...maybe...Feel like it adds depth to page, and highlights donation area a bit more*/
