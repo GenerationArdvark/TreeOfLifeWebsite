@@ -32,14 +32,15 @@
 						aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div>Tree Of Life Orphanage</div>
+					<div class="tree-of-life-text">Tree Of Life Orphanage</div>
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav">
-							<li class="nav-item" !important>
-								<a class="nav-link active" href="#">Home</a>
+							<li class="nav-item">
+								<a class=" nav-link active" href="#">Home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#orphanage_today">Orphange Today</a>
+								<a class="nav-link" href="#orphanage_today">Orphange
+									Today</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="#children">Our Children</a>
@@ -207,7 +208,7 @@
 					<h1>Our Team</h1>
 					<div class="row">
 						<div class="col-md-4">
-							<img src="assets/bebe.jpg" style="height:300px;"></img>
+							<img src="assets/bebe.jpg" style="height:400px; width: auto;" id="bebe"></img>
 						</div>
 						<div class="col-md-6">
 							<h3>Herby Dorsaintval (Bebe)</h3>
@@ -448,18 +449,43 @@
 							style="padding-top: 5em; padding-bottom: 5em;" id="contribute-transition">
 
 							<h1>Contribute</h1>
-							<div class="row" style="padding-top: 20px;">
+							<div class="row">
 								<h4>Current Items of Need</h4>
-								<ul style="padding-left: 4em;" id="need">
-									<h6 style="color:rgb(42, 42, 42);">Calculated Annually</h6>
-									<li>Water Filter - $425</li>
-									<li>Solar Panels - $3,900</li>
-									<li>Automobile Maintenance - $1,500</li>
-									<li>School uniforms and supplies - $3,950</li>
-									<li>Library Books - $900</li>
-									<li>Sports Equipment - $500</li>
-									<li>Toiletries - $70</li>
-								</ul>
+								<table>
+									<tr>
+										<th>Month</th>
+										<th>Annual Cost</th>
+									</tr>
+									<tr>
+										<td>Water Filter</td>
+										<td>$425</td>
+									</tr>
+									<tr>
+										<td>Solar Panels</td>
+										<td>$3,900</td>
+									</tr>
+									<tr>
+										<td>Automobile Maintainence</td>
+										<td>$1,500</td>
+									</tr>
+									<tr>
+										<td>School uniforms and supplies</td>
+										<td>$3,950</td>
+									</tr>
+									<tr>
+										<td>Library Books</td>
+										<td>$900</td>
+									</tr>
+									<tr>
+										<td>Sports Equipment</td>
+										<td>$500</td>
+									</tr>
+									<tr>
+										<td>Toiletries</td>
+										<td>$70</td>
+									</tr>
+								</table>
+								<br>
 								<p>
 									All funding goes directly to the orphanage. There are no New York
 									administrative/ fund raising costs (other than accounting fees for the 990
@@ -505,8 +531,9 @@
 										</address>
 										<hr>
 										<p>General gifts will be applied where most needed. Partial gifts
-											towards above items are also welcome.To donate on line through
-											our secure donation page at PayPal click the donate button below.
+											towards the above items are also welcome. Click the button below
+											to make a contribution through our secure donation page at
+											PayPal.
 										</p>
 										<div id="smart-button-container">
 											<div style="text-align: center;">
@@ -561,6 +588,9 @@
 								making a huge difference in the lives of children and adults in Haiti.
 							</p>
 						</div>
+
+						<!-- Too many photos hanging around... perhaps a carousel or slide-show, or fewer loose pictures and more text/descriptions -->
+
 				</section>
 				<section id="gallery">
 					<div class="container" id="gallery">
