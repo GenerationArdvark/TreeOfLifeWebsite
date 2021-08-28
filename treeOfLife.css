@@ -169,22 +169,6 @@ ul li {
 	border: 1px solid black;
 }
 
-@keyframes spinny {
-	0% {
-		transform: skewX(0deg);
-	}
-
-
-	50% {
-		transform: skewX(0deg);
-	}
-
-
-	100% {
-		transform: skewX(1000000deg);
-		color: rgb(255, 157, 71);
-	}
-}
 
 /* HOW TO GET PSEUDO CLASSES TO WORK W/ BOOTSTRAP??
 a:hover {
