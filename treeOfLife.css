@@ -70,15 +70,19 @@ td {
 	box-shadow: 10px 10px rgba(43, 43, 43, 0.065);
 	transform: translate(20px);
 	transition-duration: 5s;
+	margin: 3em;
 }
 
 img:hover {
 	transform: scale(1.2);
 	transition: .8s ease-in-out;
 	border-radius: 2%;
-	background-color: rgba(0, 0, 0, 0.107);
-	padding: 1.1em;
+	padding: .2em;
+}
 
+img:active {
+	transition: .1s;
+	transform: rotate(2deg);
 }
 
 /*
@@ -143,6 +147,10 @@ div ul li {
 	list-style: none;
 }
 
+section ul li {
+	list-style: circle;
+}
+
 li {
 	list-style: circle;
 	margin: 1px;
@@ -156,12 +164,27 @@ ul li {
 */
 
 #need {
-	color: #FFC43A;
+	color: #E1C793;
 	padding: 10px;
 	border: 1px solid black;
 }
 
+@keyframes spinny {
+	0% {
+		transform: skewX(0deg);
+	}
 
+
+	50% {
+		transform: skewX(0deg);
+	}
+
+
+	100% {
+		transform: skewX(1000000deg);
+		color: rgb(255, 157, 71);
+	}
+}
 
 /* HOW TO GET PSEUDO CLASSES TO WORK W/ BOOTSTRAP??
 a:hover {
@@ -174,10 +197,8 @@ a:active {
 }
 */
 
-
-
 #contribute {
-	background-color: rgb(60, 80, 104);
+	background-color: #283346;
 	color: aliceblue;
 	font-weight: 300;
 }
@@ -187,23 +208,24 @@ a:active {
 		transform: scale(1);
 	}
 
-	25% {
-		color: white;
-	}
+	25% {}
 
 	50% {
-		color: rgb(239, 213, 120);
-		transform: translateY(5px);
+		color: rgb(235, 204, 92);
 		transform: scale(1.1);
 	}
 
 	75% {
-		transform: translateY(-2px);
+		transform: translateY(-1px);
 	}
 
 	100% {
 		transform: scale(1);
 	}
+}
+
+header {
+	background-color: #212529;
 }
 
 body {
@@ -233,7 +255,7 @@ footer {
 	/*background-color: rgba(232, 223, 189, 0.1);*/
 	width: 15%;
 	margin-top: 20px;
-	margin-left: 80px;
+	margin-left: 100px;
 	/*
 	transition-timing-function: ease-in-out;
 	transition-duration: 4s;
@@ -246,4 +268,33 @@ footer {
 	animation-iteration-count: infinite;
 	animation-direction: forwards;
 	animation-timing-function: linear;
+}
+
+#dolladollabillyall {
+	text-align: center;
+	color: #B3D7C9;
+	background-color: rgba(0, 0, 0, .01);
+	margin-top: 3em;
+	width: max-content;
+	height: auto;
+	margin-left: 41%;
+	font-family: sans-serif;
+	font-weight: 300;
+}
+
+#spinny {
+	animation-name: spinny;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: forwards;
+	animation-timing-function: ease-in-out;
+	color: rgb(222, 84, 25);
+	background-color: hsla(40, 57%, 73%, 0);
+	/*text-align: center;*/
+	max-width: max-content;
+}
+
+
+#gallery-background {
+	background-color: #F6FFF2;
 }
